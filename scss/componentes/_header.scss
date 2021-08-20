@@ -1,0 +1,39 @@
+@import '../bases/maps';
+header {
+    .navbar-brand {
+        font-family: 'Bree Serif', serif, Helvetica;
+        font-size:25px;
+        letter-spacing: 2px;
+    }
+    .navbar {
+        background-color: map-get($bg-header, bg-color-dark );
+        .nav-item {
+
+            .nav-link {
+                @extend %link-white;
+                letter-spacing: 0.4px;
+                margin-left: 5px;
+                margin-right: 5px;
+                border-radius: 10px;
+                transition: all .5s;
+                &:hover {
+                    background-color: white;
+                    color: #000;
+                }
+            }
+        }
+
+        .container-fluid {
+
+            .navbar-brand {
+                color: white;
+            }
+
+            .navbar-toggler-icon {
+                i {
+                    color: white;
+                }
+            }
+        }
+    }
+}
