@@ -114,7 +114,6 @@ main .cards .card-container {
   justify-content: center;
 }
 main .cards .card-container .card img {
-  height: 90%;
   object-fit: cover;
 }
 main .cards .card-container .card .card-body .card-text {

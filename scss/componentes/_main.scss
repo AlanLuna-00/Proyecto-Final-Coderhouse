@@ -68,7 +68,6 @@ main {
             @include cards-flex(flex, center);
             .card {
                 img {
-                    height: 90%;
                     object-fit: cover
                 }
                 .card-body {
