@@ -32,9 +32,21 @@ header .navbar .nav-item .nav-link {
   border-radius: 10px;
   transition: all 0.5s;
 }
+@media screen and (max-width: 400px) {
+  header .navbar .nav-item .nav-link {
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+}
 header .navbar .nav-item .nav-link:hover {
   background-color: white;
   color: #000;
+}
+@media screen and (max-width: 400px) {
+  header .navbar .nav-item .nav-link:hover:hover {
+    background-color: #1c1c1c;
+    color: white;
+  }
 }
 header .navbar .container-fluid .navbar-brand {
   color: white;
@@ -48,7 +60,7 @@ main .carousel .text-over-slide {
   position: absolute;
   width: 500px;
   left: 190px;
-  top: 440px;
+  top: 520px;
   z-index: 1;
   font-size: 55px;
   font-weight: bold;
@@ -64,8 +76,7 @@ main .carousel .text-over-slide-md {
   font-family: "Montserrat", sans-serif, Helvetica;
   position: absolute;
   left: 100px;
-  width: 286px;
-  top: 490px;
+  bottom: 300px;
   font-size: 37px;
   z-index: 1;
   color: #FFFFFF;
@@ -177,7 +188,7 @@ footer .modal-body a {
   color: #000;
 }
 footer .modal-body a i {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .whatsapp a img {
