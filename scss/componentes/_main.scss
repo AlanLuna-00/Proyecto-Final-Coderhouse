@@ -67,6 +67,10 @@ main {
         .card-container {
             @include cards-flex(flex, center);
             .card {
+                img {
+                    height: 90%;
+                    object-fit: cover
+                }
                 .card-body {
                     .card-text {
                         @include condition(rgb(122, 119, 119));
