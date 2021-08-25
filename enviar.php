@@ -2,6 +2,7 @@
 // Conecto mi form / name / con el server a traves de los name
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
+$asunto = $_POST['asunto'];
 $mensaje = $_POST['mensaje'];
 
 // Como funciona con el server
