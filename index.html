@@ -177,25 +177,27 @@
       <h2 class="text-center pt-lg-5 pb-lg-5">Contacto</h2>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 pt-5 pt-sm-3 border-bottom border-start">
+          <form method="POST" action="enviar.php">
           <div class="form-floating mb-3 shadow">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" maxlength="40">
+            <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="Nombre" maxlength="40">
             <label for="floatingInput">Nombre y Apellido</label>
           </div>
           <div class="form-floating shadow">
-            <input type="email" class="form-control" id="floatingPassword" placeholder="Correo" maxlength="50">
+            <input type="email" name="email" class="form-control" id="floatingPassword" placeholder="Correo" maxlength="50">
             <label for="floatingPassword">Correo Electronico</label>
           </div>
           <div class="form-floating mt-3 shadow">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" maxlength="300"
+            <textarea class="form-control" name="mensaje" id="floatingTextarea" maxlength="300"
               style="height: 150px; min-height: 150px; max-height: 200px;"></textarea>
             <label for="floatingTextarea">Mensaje</label>
           </div>
           <button type="submit" class="btn btn-outline-dark mt-3 mb-3 shadow">Enviar</button>
+        </form>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9392885840566!2d-58.40569208477032!3d-34.605696680458934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaed04b92b07%3A0x39b16d1dd2f33dec!2sPaso%20341%2C%20C1046%20CABA!5e0!3m2!1ses!2sar!4v1625682600237!5m2!1ses!2sar"
-            width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
+            width="600" height="450" allowfullscreen="" loading="lazy"
             class="map ratio ratio-4x3 shadow border rounded" title="Mapa de la ubicacion de Vittoria Calzados"></iframe>
         </div>
         </div>
@@ -204,20 +206,20 @@
             <h2 class="text-center pb-5">Preguntas Frecuentes</h2>
             <div class="row faqs overflow-hidden">
               <div data-aos="fade-right" class="col-lg-12 col-md-12 col-sm 12 card mb-5 shadow">
-                <p class="pregunta">¿Venden por mayor?</p>
-                <p class="respuesta">Si! Realizamos ventas por mayor</p>
-              </div>
-              <div data-aos="fade-left" class="col-lg-12 col-md-12 col-sm-12 card mb-5 shadow text-end">
                 <p class="pregunta">¿Son fabricantes?</p>
                 <p class="respuesta">Si, somos fabricantes!</p>
               </div>
+              <div data-aos="fade-left" class="col-lg-12 col-md-12 col-sm-12 card mb-5 shadow text-end">
+                <p class="pregunta">¿Venden por mayor?</p>
+                <p class="respuesta">Si! Realizamos ventas por mayor</p>
+              </div>
               <div data-aos="fade-right" class="col-lg-12 col-md-12 col-sm-12 card mb-5 shadow">
-                <p class="pregunta">¿Lorem ipsum dolor sit?</p>
-                <p class="respuesta">Lorem ipsum dolor sit amet consectetur</p>
+                <p class="pregunta">¿Realizan envios al interior?</p>
+                <p class="respuesta">Si! realizamos</p>
               </div>
               <div data-aos="fade-left" class="col-lg-12 col-md-12 col-sm-12 card mb-5 shadow text-end">
-                <p class="pregunta">¿Lorem ipsum dolor sit?</p>
-                <p class="respuesta">Lorem ipsum dolor sit amet consectetur</p>
+                <p class="pregunta">¿Tienen catalogo?</p>
+                <p class="respuesta">Si, pedinoslo vía WhatsApp</p>
               </div>
             </div>
     </section>
@@ -286,7 +288,7 @@
   </footer>
 
   <div class="whatsapp">
-    <a href="">
+    <a href="https://web.whatsapp.com/"> 
       <img src="img/whatsapp.png" alt="">
     </a>
   </div>
