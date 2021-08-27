@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", Helvetica;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='77' height='107' viewBox='0 0 77 107'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='stamp-collection' fill='%23ffffff' fill-opacity='0.44'%3E%3Cpath d='M46 101a5 5 0 0 1 5 5h5a5 5 0 0 1 10 0h5a5 5 0 0 1 5-5v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10v-5a5 5 0 0 1 0-10V6a5 5 0 0 1-5-5h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0h-5a5 5 0 0 1-10 0H6a5 5 0 0 1-5 5v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 0 10v5a5 5 0 0 1 5 5h5a5 5 0 0 1 10 0h5a5 5 0 0 1 10 0h5a5 5 0 0 1 5-5zm15-2a7 7 0 0 0-6.71 5h-1.58a7 7 0 0 0-13.42 0h-1.58a7 7 0 0 0-13.42 0h-1.58a7 7 0 0 0-13.42 0H7.71A7.01 7.01 0 0 0 3 99.29v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58a7 7 0 0 0 0-13.42v-1.58A7 7 0 0 0 3 9.29V7.71A7.02 7.02 0 0 0 7.71 3h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58a7 7 0 0 0 13.42 0h1.58A7.02 7.02 0 0 0 74 7.71v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7 7 0 0 0 0 13.42v1.58a7.01 7.01 0 0 0-4.71 4.71h-1.58A7 7 0 0 0 61 99zM12 12h53v83H12V12zm51 81H14V14h49v79z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+header .navbar-brand {
+  font-family: "Bree Serif", serif, Helvetica;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+header .navbar {
+  background-color: #1c1c1c;
+}
+header .navbar .nav-item .nav-link {
+  letter-spacing: 0.4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 400px) {
+  header .navbar .nav-item .nav-link {
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+}
+header .navbar .nav-item .nav-link:hover {
+  background-color: white;
+  color: #000;
+}
+@media screen and (max-width: 400px) {
+  header .navbar .nav-item .nav-link:hover:hover {
+    background-color: #1c1c1c;
+    color: white;
+  }
+}
+header .navbar .container-fluid .navbar-brand {
+  color: white;
+}
+header .navbar .container-fluid .navbar-toggler-icon i {
+  color: white;
+}
+
+main .carousel .text-over-slide {
+  font-family: "Montserrat", sans-serif, Helvetica;
+  position: absolute;
+  width: 500px;
+  left: 190px;
+  top: 520px;
+  z-index: 1;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(100px);
+  color: #141a19;
+  font-weight: bold;
+}
+@media screen and (max-width: 880px) {
+  main .carousel .text-over-slide {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    position: absolute;
+    left: 100px;
+    bottom: 300px;
+    font-size: 37px;
+    z-index: 3;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    color: #141a19;
+    padding: 3px;
+    font-weight: bold;
+    height: 50px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .carousel .text-over-slide {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    position: absolute;
+    left: 34px;
+    width: 300px;
+    top: 480px;
+    font-size: 30px;
+    z-index: 1;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    color: #141a19;
+    font-weight: bold;
+  }
+}
+main .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.cards .card-container {
+  display: flex;
+  justify-content: center;
+}
+.cards .card-container .card img {
+  object-fit: cover;
+}
+.cards .card-container .card .card-body .card-text {
+  color: #7a7777;
+  text-decoration: none;
+  font-family: "Open Sans Condensed", sans-serif, Helvetica;
+  font-size: 24px;
+}
+
+.about-us img {
+  width: 90%;
+}
+
+.pregunta {
+  font-size: 20px;
+}
+
+.respuesta {
+  font-size: 14px;
+}
+
+footer .navbar-footer-container {
+  background-color: #1c1c1c;
+}
+footer .nav-link {
+  letter-spacing: 0.4px;
+  margin: 5px 5px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  font-weight: initial;
+}
+footer .nav-link i {
+  font-size: 16px;
+}
+footer .ig {
+  color: #E1306C;
+  transition: all 1s;
+}
+footer .ig:hover {
+  transform: rotate(360deg);
+  color: #E1306C;
+}
+footer .face {
+  color: #4267B2;
+  transition: all 1s;
+}
+footer .face:hover {
+  transform: rotate(360deg);
+  color: #4267B2;
+}
+
+.copy .copy-text {
+  color: white;
+}
+.copy .copy-text .corazon {
+  transition: all 1s;
+}
+.copy .copy-text .corazon:hover {
+  transform: rotate(360deg);
+}
+
+.button-modal i {
+  color: black;
+}
+
+.modal-body a i {
+  font-size: 16px;
+  color: 0;
+}
+
+footer .nav-link i {
+  font-size: 20px;
+}
+footer .button-modal i {
+  color: black;
+}
+footer .modal-body a {
+  color: #000;
+}
+footer .modal-body a i {
+  font-size: 26px;
+}
+
+.whatsapp a img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 100;
+  transition: all 1.5s;
+}
+.whatsapp a img:hover {
+  transform: rotate(1080deg);
+}
+
+header .navbar .nav-item .nav-link, footer .nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
