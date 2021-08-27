@@ -72,77 +72,85 @@ main .carousel .text-over-slide {
   color: #141a19;
   font-weight: bold;
 }
-main .carousel .text-over-slide-md {
-  font-family: "Montserrat", sans-serif, Helvetica;
-  position: absolute;
-  left: 100px;
-  bottom: 300px;
-  font-size: 37px;
-  z-index: 1;
-  color: #FFFFFF;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(100px);
-  color: #141a19;
-  padding: 3px;
-  font-weight: bold;
+@media screen and (max-width: 880px) {
+  main .carousel .text-over-slide {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    position: absolute;
+    left: 100px;
+    bottom: 300px;
+    font-size: 37px;
+    z-index: 3;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    color: #141a19;
+    padding: 3px;
+    font-weight: bold;
+    height: 50px;
+    width: 350px;
+  }
 }
-main .carousel .text-over-slide-mob {
-  font-family: "Montserrat", sans-serif, Helvetica;
-  position: absolute;
-  left: 34px;
-  width: 300px;
-  top: 480px;
-  font-size: 30px;
-  z-index: 1;
-  color: #FFFFFF;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(100px);
-  color: #141a19;
-  font-weight: bold;
+@media screen and (max-width: 400px) {
+  main .carousel .text-over-slide {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    position: absolute;
+    left: 34px;
+    width: 300px;
+    top: 480px;
+    font-size: 30px;
+    z-index: 1;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    color: #141a19;
+    font-weight: bold;
+  }
 }
-main .carousel .carousel-item img {
+main .carousel-item img {
   object-fit: cover;
   width: 100%;
   height: 100vh;
 }
-main .cards .card-container {
+
+.cards .card-container {
   display: flex;
   justify-content: center;
 }
-main .cards .card-container .card img {
+.cards .card-container .card img {
   object-fit: cover;
 }
-main .cards .card-container .card .card-body .card-text {
+.cards .card-container .card .card-body .card-text {
   color: #7a7777;
   text-decoration: none;
   font-family: "Open Sans Condensed", sans-serif, Helvetica;
   font-size: 24px;
 }
-main .about-us img {
+
+.about-us img {
   width: 90%;
 }
-main .pregunta {
+
+.pregunta {
   font-size: 20px;
 }
-main .respuesta {
+
+.respuesta {
   font-size: 14px;
 }
 
+footer .navbar-footer-container {
+  background-color: #1c1c1c;
+}
 footer .nav-link {
   letter-spacing: 0.4px;
   margin: 5px 5px;
   border-radius: 10px;
   transition: all 0.5s;
-  font-weight: bold;
-}
-footer .nav-link:hover {
-  color: #fff;
-  background: #000;
-  font-weight: normal;
+  font-weight: initial;
 }
 footer .nav-link i {
   font-size: 16px;
@@ -164,6 +172,9 @@ footer .face:hover {
   color: #4267B2;
 }
 
+.copy .copy-text {
+  color: white;
+}
 .copy .copy-text .corazon {
   transition: all 1s;
 }
@@ -206,14 +217,9 @@ footer .modal-body a i {
   transform: rotate(1080deg);
 }
 
-header .navbar .nav-item .nav-link {
+header .navbar .nav-item .nav-link, footer .nav-link {
   text-decoration: none;
   color: white;
-}
-
-footer .nav-link {
-  text-decoration: none;
-  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
