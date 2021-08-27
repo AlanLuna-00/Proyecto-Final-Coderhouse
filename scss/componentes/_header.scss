@@ -1,12 +1,15 @@
 @import '../bases/maps';
+
 header {
     .navbar-brand {
         font-family: 'Bree Serif', serif, Helvetica;
-        font-size:25px;
+        font-size: 25px;
         letter-spacing: 2px;
     }
+
     .navbar {
-        background-color: map-get($bg-header, bg-color-dark );
+        background-color: map-get($bg-header, bg-color-dark);
+
         .nav-item {
 
             .nav-link {
@@ -16,17 +19,20 @@ header {
                 margin-right: 5px;
                 border-radius: 10px;
                 transition: all .5s;
-                @media screen and (max-width:400px){
+
+                @media screen and (max-width:400px) {
                     text-align: center;
                     letter-spacing: 1.5px;
                 }
+
                 &:hover {
                     background-color: white;
                     color: #000;
-                    @media screen and (max-width:400px){
+
+                    @media screen and (max-width:400px) {
                         &:hover {
                             background-color: #1c1c1c;
-                            color: white;  
+                            color: white;
                         }
                     }
                 }

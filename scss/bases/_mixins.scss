@@ -5,9 +5,12 @@
 
 @mixin condition($card-text-color) {
     color: $card-text-color;
-    @if $card-text-color == rgb(122, 119, 119) {
+
+    @if $card-text-color==rgb(122, 119, 119) {
         text-decoration: none;
-    } @else {
+    }
+
+    @else {
         text-decoration: dashed;
     }
 }

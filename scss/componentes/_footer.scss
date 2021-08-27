@@ -1,75 +1,84 @@
 @import '../bases/variables';
 
 footer {
-        .navbar-footer-container {
-            background-color:map-get($bg-header, bg-color-dark );
-        }
-        .nav-link {
-            @extend %link-white;
-            letter-spacing: 0.4px;
-            margin: 5px 5px;
-            border-radius: 10px;
-            transition: all .5s;
-            font-weight:initial;
-            i {
-                font-size: nth($fonts, 2);
-            }
-            
-        }
-        .ig {
-            color:#E1306C ;
-            transition: all 1s;
-                &:hover {
-                    transform: rotate(360deg);
-                    color:#E1306C;
-                }
-        }
-        .face {
-            color:#4267B2;
-            transition: all 1s;
-                &:hover {
-                    transform: rotate(360deg);
-                    color:#4267B2;
-                }
-        }
+    .navbar-footer-container {
+        background-color: map-get($bg-header, bg-color-dark);
     }
 
-    .copy {
-        .copy-text {
-            color: white;
-            .corazon {
-                transition: all 1s;
-                &:hover {
-                    transform: rotate(360deg);
-                }
-            }
-        }
-    }
-    
-    // MODAL 
+    .nav-link {
+        @extend %link-white;
+        letter-spacing: 0.4px;
+        margin: 5px 5px;
+        border-radius: 10px;
+        transition: all .5s;
+        font-weight: initial;
 
-    .button-modal {
         i {
-            color: black;
+            font-size: nth($fonts, 2);
+        }
+
+    }
+
+    .ig {
+        color: #E1306C;
+        transition: all 1s;
+
+        &:hover {
+            transform: rotate(360deg);
+            color: #E1306C;
         }
     }
 
-    .modal-body {
-        a {
-            i {
-                font-size: nth($fonts,2);
-                color: 000;
+    .face {
+        color: #4267B2;
+        transition: all 1s;
+
+        &:hover {
+            transform: rotate(360deg);
+            color: #4267B2;
+        }
+    }
+}
+
+.copy {
+    .copy-text {
+        color: white;
+
+        .corazon {
+            transition: all 1s;
+
+            &:hover {
+                transform: rotate(360deg);
             }
         }
     }
+}
+
+// MODAL 
+
+.button-modal {
+    i {
+        color: black;
+    }
+}
+
+.modal-body {
+    a {
+        i {
+            font-size: nth($fonts, 2);
+            color: 000;
+        }
+    }
+}
 
 
 footer {
     .nav-link {
         i {
-                font-size: nth($fonts,4);
+            font-size: nth($fonts, 4);
         }
     }
+
     .button-modal {
         i {
             color: black;
@@ -79,13 +88,14 @@ footer {
     .modal-body {
         a {
             color: #000;
+
             i {
-                font-size: nth($fonts,7) ;
+                font-size: nth($fonts, 7);
             }
         }
     }
 
-        
+
 }
 
 .whatsapp {
@@ -98,10 +108,11 @@ footer {
             right: 2%;
             z-index: 100;
             transition: all 1.5s;
+
             &:hover {
                 transform: rotate(1080deg);
             }
         }
     }
-   
+
 }
