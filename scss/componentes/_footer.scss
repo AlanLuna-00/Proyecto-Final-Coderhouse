@@ -11,12 +11,13 @@ footer {
         margin: 5px 5px;
         border-radius: 10px;
         transition: all .5s;
-        font-weight: initial;
-
         i {
             font-size: nth($fonts, 2);
         }
-
+        &:hover {
+            background-color: white;
+            color: #000;
+        }
     }
 
     .ig {
