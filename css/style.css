@@ -45,26 +45,15 @@ header .navbar .nav-item .nav-link {
   }
 }
 header .navbar .nav-item .nav-link:hover {
-  background-color: white;
-  color: #000;
-}
-@media screen and (max-width: 400px) {
-  header .navbar .nav-item .nav-link:hover:hover {
-    background-color: #1c1c1c;
-    color: white;
-  }
-}
-@media screen and (max-width: 900px) {
-  header .navbar .nav-item .nav-link:hover:hover {
-    background-color: #1c1c1c;
-    color: white;
-  }
+  color: #818181;
 }
 header .navbar .container-fluid .navbar-brand {
   color: white;
 }
 header .navbar .container-fluid .navbar-toggler-icon i {
   color: white;
+  position: relative;
+  top: 5px;
 }
 
 main .carousel .text-over-slide {
@@ -104,11 +93,30 @@ main .carousel .text-over-slide {
     width: 350px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   main .carousel .text-over-slide {
     font-family: "Montserrat", sans-serif, Helvetica;
     position: absolute;
     left: 34px;
+    width: 300px;
+    top: 600px;
+    font-size: 30px;
+    z-index: 1;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    color: #141a19;
+    font-weight: bold;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 325px) {
+  main .carousel .text-over-slide {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    position: absolute;
+    left: 10px;
     width: 300px;
     top: 600px;
     font-size: 30px;
@@ -174,8 +182,7 @@ footer .nav-link i {
   font-size: 16px;
 }
 footer .nav-link:hover {
-  background-color: white;
-  color: #000;
+  color: #818181;
 }
 footer .ig {
   color: #E1306C;

@@ -31,22 +31,7 @@ header {
                 }
 
                 &:hover {
-                    background-color: white;
-                    color: #000;
-
-                    @media screen and (max-width:400px) {
-                        &:hover {
-                            background-color: #1c1c1c;
-                            color: white;
-                        }
-                    }
-                    @media screen and (max-width:900px) {
-                        &:hover {
-                            background-color: #1c1c1c;
-                            color: white;
-                        }
-                    }
-
+                    color: rgb(129, 129, 129);
                 }
             }
         }
@@ -60,6 +45,8 @@ header {
             .navbar-toggler-icon {
                 i {
                     color: white;
+                    position: relative;
+                    top: 5px;
                 }
             }
         }
